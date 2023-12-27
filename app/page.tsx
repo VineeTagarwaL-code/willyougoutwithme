@@ -5,7 +5,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { Input } from "@/components/ui/input"
-import { ChangeEvent, useState } from "react"
+import { ChangeEvent, useEffect, useState } from "react"
 import { Copy } from 'lucide-react';
 import { Loader2 } from "lucide-react"
 
@@ -20,12 +20,16 @@ export default function Home() {
   
    const [isCopied , setIsCopied] = useState<boolean>(false) 
   const [generatedLink, setGeneratedLink] = useState<string>("https://willyougoutwithme.vercel.app/request")
+useEffect(()=>{
 
+  console.log("Interest in the code ? , its coded by vineet agarwal " )
+  console.log("repo link : https://github.com/VineeTagarwaL-code/willyougoutwithme")
+},[])
   function handleNameChange(e: ChangeEvent<HTMLInputElement>) {
     setCrushName(e.target.value)
   }
 
-  function handleGenerate() {
+  function handleGenerate() {https://willyougoutwithme.vercel.app/request?name=pritk
 
     if(crushName === ""){
       setError(true)
