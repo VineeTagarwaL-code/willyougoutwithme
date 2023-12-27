@@ -21,7 +21,6 @@ const Page = () => {
     }, [searchParams]);
 
     function moveButton() {
-
         buttonRef.current.style.position = "absolute";
         var x = Math.random() * (window.innerWidth - buttonRef.current.offsetWidth) - 85;
         var y = Math.random() * (window.innerHeight - buttonRef.current.offsetHeight) - 48;

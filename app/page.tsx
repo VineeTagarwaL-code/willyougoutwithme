@@ -19,7 +19,7 @@ export default function Home() {
   const [link , setLink] = useState<string>("")
   
    const [isCopied , setIsCopied] = useState<boolean>(false) 
-  const [generatedLink, setGeneratedLink] = useState<string>("http://localhost:3000/request")
+  const [generatedLink, setGeneratedLink] = useState<string>("https://willyougoutwithme.vercel.app/request")
 
   function handleNameChange(e: ChangeEvent<HTMLInputElement>) {
     setCrushName(e.target.value)
